@@ -12,6 +12,8 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import axios from 'axios';
 
+const URL = process.env.REACT_APP_SERVER_URL;
+
 const Login = () => {
   
   const [open, setOpen] = useState(false);
@@ -40,7 +42,7 @@ const Login = () => {
           'email': email,
           'password': password
         }
-        axios.post('/luxerange/signup', data)
+        axios.post(`${URL}/luxerange/signup`, data)
         .then(function (response) {
           console.log("Status:- " + response.status);
           dispatch({type: 'REGISTER', payload: response});

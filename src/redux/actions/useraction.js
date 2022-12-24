@@ -1,8 +1,9 @@
 import axios from "axios";
+const URL = process.env.REACT_APP_SERVER_URL;
 
 export function GetUserProfile (id) {
     return dispatch => {
-        axios.get(`/luxerange/user/${id}`)
+        axios.get(`${URL}/luxerange/user/${id}`)
         .then( (res) => {
             dispatch({type: 'GOTUSERPROFILE', payload: res.data});
         });
@@ -11,7 +12,7 @@ export function GetUserProfile (id) {
 
 export function ChangePassword (data) {
     return dispatch => {
-        axios.put(`/luxerange/user/forgot_password`, data)
+        axios.put(`${URL}/luxerange/user/forgot_password`, data)
         .then ( res => {
             dispatch({type: 'CHANGEPASS', payload: res});
             alert("Password has been changed successfully");
@@ -22,7 +23,7 @@ export function ChangePassword (data) {
 // to register a new user
 export function RegisterUser (data) {
     return dispatch => {
-        axios.post('/luxerange/signup', data)
+        axios.post(`${URL}/luxerange/signup`, data)
         .then( res => {
             console.log("In action");
             dispatch({type: 'REGISTER', payload: res.data});
@@ -34,7 +35,7 @@ export function RegisterUser (data) {
 export function Loginuser (data) {
     return dispatch => {
         console.log("Logged In");
-        axios.post('/luxerange/login', data)
+        axios.post(`${URL}/luxerange/login`, data)
         .then( res => {
             localStorage.setItem('token', res.data.token);
             localStorage.setItem('isloggedin', true);
@@ -47,7 +48,7 @@ export function Loginuser (data) {
 export function GetUsers (type) {
     return async dispatch => {
         console.log("In action :- " + type)
-        await axios.get(`/luxerange/networkUsers?type=${type}`)
+        await axios.get(`${URL}/luxerange/networkUsers?type=${type}`)
         .then(res => {
             dispatch({type: 'GETALLUSERS', payload: (res.data)});
         })
@@ -60,7 +61,7 @@ export function GetUsers (type) {
 // to change the role of the user.
 export function ChangeRole (id,type,data) {
     return async dispatch => {
-        await axios.put(`/luxerange/setAdmin?user_id=${id}&${type}=${data}`)
+        await axios.put(`${URL}/luxerange/setAdmin?user_id=${id}&${type}=${data}`)
         .then(res => {
             dispatch({type: 'ROLECHANGED', payload: res});
         });
@@ -70,7 +71,7 @@ export function ChangeRole (id,type,data) {
 export function Deleteaccount (id) {
     return dispatch => {
         console.log("id:- " + id)
-        axios.delete(`/luxerange/user/${id}`)
+        axios.delete(`${URL}/luxerange/user/${id}`)
         .then( res => {
             dispatch({type: 'ACCOUNT_DELETED', payload: res.data})
             localStorage.clear('jwtToken');
