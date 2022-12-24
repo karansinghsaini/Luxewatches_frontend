@@ -1,0 +1,31 @@
+.details_container{
+    margin-top: 40px;
+    border-top: 3px groove;
+    padding-top: 40px;
+}
+
+.details_desc_cont{
+    margin-top: 40px;
+    border-top: 1px groove;
+    border-bottom: 1px groove;
+    padding-top: 40px;
+}
+
+.details_desc{
+    font-size: small;
+    font-style: italic;
+}
+
+/* for desktop */
+@media only screen and (min-width: 800px){
+    .details_table_cont{
+        width: 50%;
+    }
+}
+
+/* for tabs */
+@media only screen and (min-width: 600px) and (max-width: 800px){
+    .details_table_cont{
+        width: 90%;
+    } 
+}

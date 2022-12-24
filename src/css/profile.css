@@ -1,0 +1,52 @@
+.profile_box{
+    margin-top: 20px;
+    margin-left: 10%;
+    border-style: groove;
+    border-radius: 5px;
+    color: #0A416B;
+    clear:both;
+}
+
+.profile_box:hover {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.profile_box_head{
+    padding: 30px 0 0 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.profile_box_text{
+    padding: 0 0 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .left, .center, .right{
+    float:left;
+    padding:5px;
+} */
+
+/* for desktop */
+@media only screen and (min-width: 800px){
+    .profile_box{
+        margin-top: 20px;
+        margin-left: 10%;
+        width: 350px;
+        border-style: groove;
+        border-radius: 5px;
+        text-align: center;
+        height: max-content;
+    }
+}
+
+/* for tabs */
+@media only screen and (min-width: 500px) and (max-width: 800px){
+    .profile_box{
+        margin-top: 20px;
+        margin-left: 10%;
+        width: 200px;
+        border-style: groove;
+        border-radius: 5px;
+        text-align: center;
+    }   
+}

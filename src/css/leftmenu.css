@@ -1,0 +1,106 @@
+.leftmenu_container{
+    padding-top: 20px;
+}
+
+.filter_leftmenu{
+    font-weight: bold;
+    font-size: large;
+}
+
+.filter_head{
+    font-weight: 400;
+    font-size: medium;
+}
+
+.watches_button{
+    background-color: #aa3535; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.home_leftmenu_filter{
+    font-size: small;
+}
+
+/* for desktop */
+@media only screen and (min-width: 800px){
+    .circle{
+        border-radius: 50%;
+        background: black;
+        width: 20px;
+        height: 20px;
+    }
+
+    .leftmenu_container{
+        padding-top: 60px;
+    }
+    
+    .left_admin_container{
+        display: flex;
+        cursor: pointer;
+        border-radius: 10px;
+        padding: 10px 20px 0;
+    }
+
+    .filter_leftmenu{
+        font-weight: bold;
+        font-size: larger;
+    }
+
+    .filter_head{
+        font-weight: 400;
+        font-size: large;
+    }
+
+    .home_leftmenu_filter{
+        font-size: medium;
+    }
+
+}
+
+/* for tabs */
+@media only screen and (min-width: 600px) and (max-width: 800px){
+    .circle{
+        border-radius: 50%;
+        background: black;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .left_admin_container{
+        display: flex;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: small;
+    }
+
+    .watches_button{
+        width: 50%;
+    }
+
+    .leftmenu_container{
+        padding-top: 60px;
+    }
+
+    .filter_leftmenu{
+        font-weight: bold;
+        font-size: larger;
+    }
+
+    .filter_head{
+        font-weight: 400;
+        font-size: large;
+    }
+
+    .home_leftmenu_filter{
+        font-size: medium;
+    }
+}

@@ -1,0 +1,39 @@
+.admin_side_icons{
+    padding-left: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.admin_side_icons:hover {
+    background-color: #1E3C71;
+    border-radius: 10px;
+}
+
+
+/* for desktop */
+@media only screen and (min-width: 800px){
+    .admin_side_icons{
+        padding-left: 30px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    .admin_side_icons:hover {
+        background-color: #1E3C71;
+        border-radius: 10px;
+    }
+}
+
+/* for tabs */
+@media only screen and (min-width: 500px) and (max-width: 800px){
+    .admin_side_icons{
+        padding-left: 15px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    .admin_side_icons:hover {
+        background-color: #1E3C71;
+        border-radius: 10px;
+    }   
+}

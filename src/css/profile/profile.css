@@ -1,0 +1,15 @@
+.profile_container h6 {
+    font-size: larger;
+}
+
+.profile_container h2 {
+    padding-top: 30px;
+}
+
+@media only screen and (min-width: 800px){
+    .profile_container{
+        padding-left: 10%;
+        width: 80%;
+    }
+    
+}

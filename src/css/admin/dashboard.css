@@ -1,0 +1,25 @@
+.dash_table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.dash_td{
+    font-size: smaller;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dash_img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.user_name{
+    font-size: smaller;
+}
+/* .admin_dashboard_container{
+    border: 1px groove;
+} */

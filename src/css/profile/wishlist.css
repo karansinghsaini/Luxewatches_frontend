@@ -1,0 +1,12 @@
+.wishlist_container p,h3{
+    font-family: 'Times New Roman', Times, serif
+}
+
+@media only screen and (min-width: 800px){
+    .wishlist_container{
+        padding-left: 10%;
+        padding-top: 30px;
+        width: 80%;
+    }
+    
+}

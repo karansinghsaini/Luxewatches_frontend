@@ -1,0 +1,41 @@
+.review_container{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding: 40px;
+    background-color: rgba(172, 172, 172, 0.1);
+    box-shadow: 3px 3px 3px rgba(21, 43, 83, 0.205);
+}
+
+.review_brand{
+    font-family: monospace;
+}
+.review_img_icon{
+    height:80px;
+    width: 80px;
+}
+
+.review_ind_cont{
+    border-bottom: 2px groove;
+    padding-bottom: 20px;
+}
+
+.review_head{
+    padding-top: 15px;
+}
+
+/* for desktop */
+@media only screen and (min-width: 800px){
+    .review_container{
+        width: 60%;
+    }
+
+}
+
+/* for tabs */
+@media only screen and (min-width: 600px) and (max-width: 800px){
+    .review_container{
+        width: 50%;
+    }
+}

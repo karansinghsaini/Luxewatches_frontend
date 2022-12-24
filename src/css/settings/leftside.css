@@ -1,0 +1,20 @@
+.leftside_menu{
+    cursor: pointer;
+    height: 50px;
+    text-align: center;
+}
+
+.leftside_menu:hover{
+    background-color: rgb(51,181,229);
+    border-radius: 10px;
+}
+
+/* for desktop */
+@media only screen and (min-width: 800px){
+    .leftside_menu{
+        cursor: pointer;
+        height: 30px;
+      
+    }
+
+}

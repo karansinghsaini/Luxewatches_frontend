@@ -1,0 +1,49 @@
+
+.register_button{
+    background-color: #1E3C71;
+}
+
+.login_left_col {
+    background-image: url("../images/watch_login.jpg");
+    background-size: contain;
+}
+
+.login_right_col{
+    background-color:  white;
+}
+
+.login_container{
+    border: groove #1E3C71;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* .login_background{
+    background-color: rgba(21, 43, 81,0.8);
+} */
+
+.login_heading{
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 80px;
+    color: rgb(103, 103, 103);
+}
+
+.login_heading2{
+    color: grey;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+.login_button{
+    border-radius: 10px;
+}
+
+.login_or{
+    font-size: x-small;
+    color: grey;
+    font-family: cursive;
+}
+
+.login_form_div{
+    padding: 0 70px 0 70px;
+}

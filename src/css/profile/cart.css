@@ -1,0 +1,11 @@
+.cart_pad_cont{
+    padding-left: 60%;
+}
+
+
+
+@media only screen and (min-width: 800px){
+    .cart_pad_cont{
+        padding-left: 30%;
+    }
+}

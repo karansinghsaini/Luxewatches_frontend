@@ -1,0 +1,26 @@
+.profile_left_cont{
+    padding-top: 100px;
+}
+
+.leftmenu_profile{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.left_profile_container{
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.left_profile_container:hover{
+    background-color: #446baf;
+    border-radius: 10px;
+    color: white;
+}
+
+.left_profile_container:active{
+    background-color: #446baf;
+    border-radius: 10px;
+    color: white;
+}

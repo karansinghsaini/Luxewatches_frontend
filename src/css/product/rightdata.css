@@ -1,0 +1,19 @@
+.prod_right_container{
+    padding: 80px 0 0 10px;
+}
+
+.product_detail_image{
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+    width: 60%;
+    height: 90%;
+}
+
+.like_icon{
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
