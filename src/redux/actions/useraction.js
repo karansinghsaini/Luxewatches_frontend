@@ -33,8 +33,9 @@ export function RegisterUser (data) {
 
 // to login existing user
 export function Loginuser (data) {
+    console.log(`${URL}`)
     return dispatch => {
-        console.log("Logged In");
+        console.log(`${URL}/luxerange/login`);
         axios.post(`${URL}/luxerange/login`, data)
         .then( res => {
             localStorage.setItem('token', res.data.token);

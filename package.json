@@ -2,6 +2,7 @@
   "name": "watches",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -51,9 +52,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "nodemon server.js",
-    "dev": "concurrently \"npm start\" \"npm run server\""
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -72,9 +71,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "http://localhost:5000/",
-  "devDependencies": {
-    "concurrently": "^6.5.1"
   }
 }
